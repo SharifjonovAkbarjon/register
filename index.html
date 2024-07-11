@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <form class="login" action="">
+        <input class="login__username" type="text" placeholder="username">
+        <input type="password" class="login__password" placeholder="password">
+        <button type="submit">Login</button>
+        <button class="btn__open" type="button">Register</button>
+    </form>
+
+    <div class="wrapper">
+        <div class="card">
+        </div>
+    </div>
+
+
+
+    <div class="popap">
+        <div class="overlay"></div>
+        <form class="model" action="">
+            <input required class="model__name" type="text" placeholder="name">
+            <input required class="model__username" type="text" placeholder="username">
+            <input required type="password" class="model__password" placeholder="password">
+            <button style="display: none;" class="eye__password">show</button>
+            <input required type="password" class="model__password-confirm" placeholder="password">
+            <button type="submit">Register</button> 
+            <button class="btn__close" type="button">Cancel</button> 
+        </form> 
+    </div>
+
+
+    <script type="module" src="./app/app.js"></script>
+</body>
+</html>

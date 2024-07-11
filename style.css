@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login{
+    width: 350px;
+    margin: 50px auto;
+}
+
+.login input,
+.login button,
+.model input,
+.model button{
+    width: 100%;
+    height: 38px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.popap{
+    display: none;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff9;
+    background: #0004;
+
+}
+
+
+
+.model{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%) scale(.8);
+    width: 350px;
+    min-height: 400px;
+    background: #fff;
+    opacity: 0;
+    animation: model .5s ease 0s forwards;
+}
+
+@keyframes model{
+    to{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+
+    }
+}
