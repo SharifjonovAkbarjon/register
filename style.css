@@ -4,9 +4,25 @@
     box-sizing: border-box;
 }
 
+body{
+    background: rgb(240,242,245);
+}
+
 .login{
-    width: 350px;
+    width: 380px;
     margin: 50px auto;
+    padding: 20px 15px;
+    margin-top: 140px;
+    border-radius: 12px;
+    background: rgb(255,255,255,1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+.parol{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: blue;
 }
 
 .login input,
@@ -16,9 +32,18 @@
     width: 100%;
     height: 38px;
     margin-bottom: 20px;
+    padding: 2px 10px;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid rgb(221,223,226);
 }
 
-
+.login button,
+.model button{
+    background: rgb(23,118,243);
+    color: #fff;
+    cursor: pointer;
+}
 
 
 
@@ -51,7 +76,14 @@
     background: #fff;
     opacity: 0;
     animation: model .5s ease 0s forwards;
+    padding: 20px 15px;    
+    border-radius: 10px;
+
 }
+
+
+
+
 
 @keyframes model{
     to{
@@ -60,3 +92,5 @@
 
     }
 }
+
+

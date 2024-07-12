@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
     <form class="login" action="">
         <input class="login__username" type="text" placeholder="username">
         <input type="password" class="login__password" placeholder="password">
+        <p class="parol">Parolni unitdingizmi?</p>
         <button type="submit">Login</button>
         <button class="btn__open" type="button">Register</button>
     </form>
@@ -27,8 +29,13 @@
         <form class="model" action="">
             <input required class="model__name" type="text" placeholder="name">
             <input required class="model__username" type="text" placeholder="username">
-            <input required type="password" class="model__password" placeholder="password">
-            <button style="display: none;" class="eye__password">show</button>
+            <div class="input__password">
+                <input required type="password" class="model__password" placeholder="password">
+                <button style="display: none;" class="eye__password">show
+                    <i class="fa-regular fa-eye-slash"></i>
+                    <i class="fa-regular fa-eye"></i>
+                </button>
+            </div>
             <input required type="password" class="model__password-confirm" placeholder="password">
             <button type="submit">Register</button> 
             <button class="btn__close" type="button">Cancel</button> 
