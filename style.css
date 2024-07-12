@@ -6,6 +6,7 @@
 
 body{
     background: rgb(240,242,245);
+    padding: 20px 50px;
 }
 
 .login{
@@ -45,6 +46,33 @@ body{
     cursor: pointer;
 }
 
+
+.wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    min-width: 200px;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid rgb(240,242,245);
+    border-radius: 8px;
+    gap: 5px;
+    background: rgb(255,255,255,1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+.card__circle{
+    width: 100px;
+    height: 100px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: 15px;
+}
 
 
 
